@@ -7,12 +7,14 @@
     <title>Yas Saad</title>
 
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" type="image/icon" href="./assets/images/logos/favicon.ico">
 </head>
 <body>
-    <!-- banner section -->
+    <!-- banner logo -->
     <header id="banner"> 
-        <img src="./assets/images/logos/yas logo.png" class="logo">
+        <!-- navigation section -->
         <nav>
+            <a href="#"><img src="./assets/images/logos/yas logo.png" class="logo"></a>
             <ul class="navBar">
                 <!-- list item elements -->
                 <li>
@@ -29,13 +31,150 @@
                 </li>
             </ul>
         </nav>
-        
+
+        <!-- banner text -->
         <section class="banner-text">
             <h1>Well, hello there.</h1>
             <p>& Welcome To My Personal Portfolio</p>
         </section>
-
-        <!-- navigation section -->
     </header>
+
+    <!-- about me section -->
+    <section id="about-me" class="intro">
+        <h2 class="title">About Me</h2>
+
+        <article class="flex-row">
+            <div class="yas-img">
+                <img src="./assets/images/yas.jpeg" alt="yas siting on a bench in the metroparks surrounded by trees" class="yas-selfie">
+            </div>
+
+            <div class="yas-bio">
+                <h3>Hi, my name is Yasmine but you can call me Yas for short!</h3>
+                <p>
+                    I am a 26 year old who's always had a passion for computers. 
+                    This passion led me to enroll in coding electives in highschool and I found 
+                    the process of building websites to be mind blowing. 
+                </p>
+                <p>
+                    A lot has changed in the tech realm since then which led me to enroll in the Michigan State University Coding Bootcamp to improve and build my skill set.
+                </p>
+            </div>
+        </article>
+    </section>
+
+    <!-- portfolio section -->
+    <section id="portfolio" class="portfolio-body">
+        <h2 class="portfolio-title">Portfolio</h2> 
+
+        <article class="grid">
+            <div class="portfolio-items-wrapper">
+                <!-- portfolio item 1 (run buddy)-->
+                <div class="portfolio-item">
+                    <div class="portfolio-img" style="background-image:url(../portfolio/assets/images/run-buddy.jpeg)"></div>
+
+                    <div class="portfolio-text">
+                        <div class="logo-wrapper">
+                            <a href="https://ysaad01.github.io/run-buddy/" target="_blank">
+                                <img src="./assets/images/logos/run-buddy logo.png" alt="yellow running figure">
+                            </a>
+                        </div>
+
+                        <div class="subtitle">
+                            Run Buddy Website 
+                            <br>
+                            Utilized HTML, CSS, Flexbox and GitHub to build a mobile responsive website.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- portfolio item 2 (horiseon)-->
+                <div class="portfolio-item">
+                    <div class="portfolio-img" style="background-image:url(../portfolio/assets/images/horiseon.jpg)"></div>
+
+                    <div class="portfolio-text">
+                        <div class="logo-wrapper">
+                            <a href="https://ysaad01.github.io/horiseon-website/" target="_blank">
+                                <img src="./assets/images/logos/horiseon logo.png" alt="brand awareness" class="portfolio-logo">
+                            </a>
+                        </div>
+
+                        <div class="subtitle">
+                            Horiseon Website 
+                            <br>
+                            Restructured code to make it more concise. Also added semantic HTML to follow accessibility standards and improve SEO.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- portfolio item 3 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-img" style="background-image:url(../portfolio/assets/images/macbook.jpeg)"></div>
+
+                    <div class="portfolio-text">
+                        <div class="logo-wrapper">
+                            <img src="./assets/images/logos/coming-soon logo1.png" alt="coming soon logo">
+                        </div>
+
+                        <div class="subtitle">
+                            Under Construction 
+                            <br>
+                            Coming Soon
+                        </div>
+                    </div>
+                </div>
+
+                <!-- portfolio item 4 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-img" style="background-image:url(../portfolio/assets/images/code-macbook.jpeg)"></div>
+
+                    <div class="portfolio-text">
+                        <div class="logo-wrapper">
+                            <img src="./assets/images/logos/coming-soon logo1.png" alt="coming soon logo">
+                        </div>
+
+                        <div class="subtitle">
+                            Under Construction 
+                            <br>
+                            Coming Soon
+                        </div>
+                    </div>
+                </div>
+
+                <!-- portfolio item 5 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-img" style="background-image:url(../portfolio/assets/images/typing.jpeg)"></div>
+
+                    <div class="portfolio-text">
+                        <div class="logo-wrapper">
+                            <img src="./assets/images/logos/coming-soon logo1.png" alt="coming soon logo">
+                        </div>
+
+                        <div class="subtitle">
+                            Under Construction 
+                            <br>
+                            Coming Soon
+                        </div>
+                    </div>
+                </div>
+
+                <!-- portfolio item 6 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-img" style="background-image:url(../portfolio/assets/images/code.jpeg)"></div>
+
+                    <div class="portfolio-text">
+                        <div class="logo-wrapper">
+                            <img src="./assets/images/logos/coming-soon logo1.png" alt="coming soon logo">
+                        </div>
+
+                        <div class="subtitle">
+                            Under Construction 
+                            <br>
+                            Coming Soon
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
 </body>
 </html>
