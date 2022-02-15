@@ -58,7 +58,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding: 0 5vw;
-    justify-content: center;
+    justify-content: flex-end;
     font-weight: bold;
 }
 
@@ -177,16 +177,22 @@ header nav ul li a:hover {
 }
 
 .portfolio-items-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.portfolio-item {
-    position: relative;
-
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto;
 }
 
-.portfolio-img {
+.grid-img {
+    width: 375px; 
+    height: 350px;
     height: 350px;
     width: 100%;
     background-size: cover;
@@ -194,6 +200,10 @@ header nav ul li a:hover {
     background-repeat: no-repeat;
 }
 
+.portfolio-item {
+    position: relative;
+
+}
 
 .portfolio-text {
     position: absolute;
