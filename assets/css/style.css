@@ -2,6 +2,7 @@
 :root {
     --yellow: #d4af37;
     --brown:  #996515;
+    --border-color: #edc903; 
 }
 
 * {
@@ -25,10 +26,16 @@ body {
     height: 100vh;
 }
 
+.flex-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
 .logo {
-    width: 200px;
+    width: 165px;
     margin: auto;
-    position: absolute;
+    position: fixed;
 }
 
 .banner-text {
@@ -50,14 +57,12 @@ body {
 .navBar {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 10vw;
-    justify-content: flex-end;
+    padding: 0 5vw;
+    justify-content: center;
     font-weight: bold;
 }
 
 header nav {
-    position: sticky;
-    position: -webkit-sticky;
     width: 100%;
     top: 0;
     z-index: 999;
@@ -66,20 +71,22 @@ header nav {
 header nav ul li {
     list-style: none;
     margin: 40px 25px;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 header nav ul li a {
     text-decoration: none;
-    color: black;
+    color: #fff;
     padding: .5rem 2rem;
     transition: .5s;
     border-radius: 15px;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
 }
 
 header nav ul li a:hover {
-    background: var(--brown);
-    color: #fff;
+    background: rgba(153, 101, 21, 0.65);
+    text-shadow: rgba(255, 255, 255,0.6);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
 }
 /* end of nav bar styling */
 
@@ -87,20 +94,20 @@ header nav ul li a:hover {
 .intro {
     width: 100%;
     max-width: 1000px;
-    padding: 25px 0;
+    padding: 5vw 0;
     margin: .9vw auto 5vw;
-    background: #fff;
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 17.5px;
     box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 }
 
 .title {
     text-align: center;
-    font-size: 35px;
-    color: #000;
+    font-size: 40px;
+    color: #fff;
     font-weight: bold;
     border-bottom: 3px solid;
-    border-color: #7C4633;
+    border-color: var(--border-color);
     margin: 0 auto 35px auto;
     padding: auto;
     width: 30%;
@@ -112,15 +119,29 @@ header nav ul li a:hover {
     justify-content: space-around;
 }
 
+.yas-bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+}
+
 .yas-bio h3 {
-    text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    color: #fff;
+    line-height: 1.65;
+}
+
+.browntext {
+    color: #FECB91;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 }
 
 .yas-bio p {
     line-height: 1.75;
     font-size: 1.15rem;
     padding: 15px 6px;
+    color: #fff;
 }
 
 .yas-img {
@@ -132,30 +153,25 @@ header nav ul li a:hover {
     width: 450px;
     height: 450px;
 }
-
-.yas-bio {
-    width: 70%;    
-}
 /* end of about me styling */
 
 /* portfolio styling */
 .portfolio-title {
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
     color: #fff;
     font-weight: bold;
     border-bottom: 3px solid;
-    border-color: #edc903;
+    border-color: var(--border-color);
     margin: 0 auto 35px auto;
     padding: auto;
     width: 33%;
-    text-shadow: 0 0 5px rgba(255, 255, 255, .8);
 }
 
 .portfolio-body {
-    background: #000;
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 17.5px;
-    padding: 25px 0;
+    padding: 5vw 0;
     margin: 19vw 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
 }
@@ -207,7 +223,7 @@ header nav ul li a:hover {
 .portfolio-text:hover .subtitle {
     font-weight: 750;
     color: #fff;
-    background: #000;
+    background: rgba(0, 0, 0, 0.65);
     margin-bottom: 15px;
     padding: 10px;
     border-radius: 20px;
