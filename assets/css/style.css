@@ -208,7 +208,6 @@ header nav ul li a:hover {
     position: relative;
     display: flex;
     justify-content: center;
-
 }
 
 .project-text {
@@ -226,7 +225,11 @@ header nav ul li a:hover {
     width: 85%;
 }
 
-.project-text .subtitle {
+.project-text .subtitle a {
+    text-decoration: none;
+}
+
+.project-text .subtitle a p {
     transition: 1s;
     color: transparent;
     font-weight: 750;
@@ -234,7 +237,7 @@ header nav ul li a:hover {
     padding: 10px;
 }
 
-.project-text:hover .subtitle {
+.project-text:hover .subtitle a p {
     font-weight: 750;
     color: #fff;
     background: rgba(0, 0, 0, 0.65);
@@ -242,6 +245,7 @@ header nav ul li a:hover {
     padding: 10px;
     border-radius: 20px;
 }
+
 /* end of portfolio styling */
 
 /* resume styling */
