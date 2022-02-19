@@ -408,6 +408,10 @@ footer {
         margin: 4rem;
     }
 
+    .project-text .project-1-2 a p {
+        margin-left: 19vw;
+    }
+
     .logo-wrapper {
         display: none;
     }
