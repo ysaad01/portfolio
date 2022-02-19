@@ -391,16 +391,12 @@ footer {
         height: auto;
         margin-bottom: 2vw;
     }
-    
-    .code-pic {
-        margin-left: 7vw;
-    }
 
     .project-text .subtitle a {
         text-decoration: none;
     }
 
-    .project-text .subtitle a p {
+    .project-text .subtitle p {
         color: #fff;
         font-weight: 400;
         font-size: 1rem;
