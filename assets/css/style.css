@@ -1,4 +1,4 @@
-/* universal selectors */
+/* general styling */
 :root {
     --yellow: #d4af37;
     --brown:  #996515;
@@ -16,7 +16,40 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     background: var(--yellow);
 }
-/* end of universal selectors */
+
+.intro {
+    width: 100%;
+    max-width: 1000px;
+    padding: 2vw 0;
+    margin: 12vw auto 5vw;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 17.5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 3px solid;
+    border-color: var(--border-color);
+    margin: 0 auto 35px auto;
+    padding: auto;
+    width: 30%;
+    text-shadow: 0 0 2px rgba(0, 0, 0, .5) ;
+}
+
+.resume-contact {
+    width: 100%;
+    max-width: 1000px;
+    padding: 2vw 0;
+    margin: 12vw auto 5vw;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 17.5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+/* end of general styling */
 
 /* banner styling */
 #banner {
@@ -26,7 +59,7 @@ body {
     height: 100vh;
 }
 
-.flex-logo {
+.yas-logo {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -36,6 +69,7 @@ body {
     width: 165px;
     margin: auto;
     position: fixed;
+    z-index: 999;
 }
 
 .banner-text {
@@ -65,7 +99,6 @@ body {
 header nav {
     width: 100%;
     top: 0;
-    z-index: 999;
 }
 
 header nav ul li {
@@ -91,32 +124,10 @@ header nav ul li a:hover {
 /* end of nav bar styling */
 
 /* about me styling */
-.intro {
-    width: 100%;
-    max-width: 1000px;
-    padding: 5vw 0;
-    margin: .9vw auto 5vw;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 17.5px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-}
-
-.title {
-    text-align: center;
-    font-size: 40px;
-    color: #fff;
-    font-weight: bold;
-    border-bottom: 3px solid;
-    border-color: var(--border-color);
-    margin: 0 auto 35px auto;
-    padding: auto;
-    width: 30%;
-    text-shadow: 0 0 2px rgba(0, 0, 0, .5) ;
-}
-
-.flex-row {
+.about-me-wrapper {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .yas-bio {
@@ -134,7 +145,6 @@ header nav ul li a:hover {
 
 .browntext {
     color: #FECB91;
-    text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 }
 
 .yas-bio p {
@@ -146,66 +156,62 @@ header nav ul li a:hover {
 
 .yas-img {
     margin: 10px 25px;
+    width: 29%;
+    height: 100%;
+    min-width: 350px;
 }
 
 .yas-selfie {
     border-radius: 40px;
-    width: 450px;
-    height: 450px;
+    width: 100%;
+    height: 400px;
 }
 /* end of about me styling */
 
-/* portfolio styling */
-.portfolio-title {
-    text-align: center;
-    font-size: 40px;
-    color: #fff;
-    font-weight: bold;
-    border-bottom: 3px solid;
-    border-color: var(--border-color);
-    margin: 0 auto 35px auto;
-    padding: auto;
-    width: 33%;
-}
-
-.portfolio-body {
+/* project styling */
+.project-body {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 17.5px;
     padding: 5vw 0;
-    margin: 19vw 0;
+    margin: 9vw 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
 }
 
-.portfolio-items-wrapper {
+.project-items-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding-top: 10px;
 }
 
 .grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
+.prim-grid-img {
+    width: 95%;
+    height: auto;
+    border-radius: 15px; 
+}
+
 .grid-img {
-    width: 375px; 
+    width: 325px; 
     height: 350px;
-    height: 350px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    border-radius: 15px;
 }
 
-.portfolio-item {
+.project-item {
     position: relative;
+    display: flex;
+    justify-content: center;
 
 }
 
-.portfolio-text {
+.project-text {
     position: absolute;
     top: 0;
     display: flex;
@@ -214,15 +220,13 @@ header nav ul li a:hover {
     align-items: center;
     height: 100%;
     text-align: center;
-    padding: 0 100px;
 }
 
 .logo-wrapper img {
     width: 85%;
-    margin-bottom: 0;
 }
 
-.portfolio-text .subtitle {
+.project-text .subtitle {
     transition: 1s;
     color: transparent;
     font-weight: 750;
@@ -230,7 +234,7 @@ header nav ul li a:hover {
     padding: 10px;
 }
 
-.portfolio-text:hover .subtitle {
+.project-text:hover .subtitle {
     font-weight: 750;
     color: #fff;
     background: rgba(0, 0, 0, 0.65);
@@ -239,3 +243,154 @@ header nav ul li a:hover {
     border-radius: 20px;
 }
 /* end of portfolio styling */
+
+/* resume styling */
+#resume {
+    text-align: center;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 1.25rem;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: .5rem 2rem;
+    color: #fff;
+    font-weight: bold;
+    transition: .5;
+}
+
+.button:hover {
+    background: rgba(212, 175, 55, .75);
+    text-shadow: rgba(255, 255, 255,0.6);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.85);
+}
+
+.resume {
+    width: 100%;
+    margin: auto;
+    text-align: left;
+}
+
+.resume-info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.resume-info {
+    margin: 20px 10px;
+    padding: 25px;
+    font-size: 1.15rem;
+    border: 6px solid var(--border-color);
+    background-color: rgba(255, 255, 255,0.6);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    border-radius: 17.5px;
+}
+
+.resume-info h3 {
+    font-style: italic;
+}
+/* end of resume styling  */
+
+/* contact me styling */
+.contact-icons-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fa-envelope {
+    font-size: 5.5rem;
+    color: white;
+    padding-right: 3rem;
+}
+
+.fa-github {
+    font-size: 5.5rem;
+    color: white;
+    padding-right: 3rem;
+}
+
+.fa-square-phone {
+    font-size: 5.5rem;
+    color: white;
+}
+/* end of contact me styling */
+
+/* footer styling */
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width:575px) {
+    .banner-text h1 {
+        font-size: 3rem;
+    }
+
+    .banner-text p {
+        font-size: 1rem;
+    }
+
+    .logo {
+        flex-direction: column;
+        position: absolute;
+        width: 8rem;
+    }
+
+    .intro {
+        margin: 55vw auto 5vw;
+    }
+
+    .title {
+        width: 50%;
+    }
+
+    .yas-img {
+        min-width: 275px;
+    }
+
+    .yas-selfie {
+        height: auto;
+    }
+
+    .yas-bio {
+        text-align: center;
+        width: 100%;
+    }
+
+    .grid-img {
+        width: 85%;
+        height: auto;
+        margin-bottom: 2vw;
+    }
+
+    .project-text .subtitle {
+        color: #fff;
+        font-weight: 400;
+        font-size: 1rem;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.45);
+        width: 55%;
+
+    }
+
+    .logo-wrapper {
+        display: none;
+    }
+
+    .fa-envelope {
+        font-size: 3.25rem;
+    }
+    
+    .fa-github {
+        font-size: 3.25rem
+    }
+    
+    .fa-square-phone {
+        font-size: 3.25rem
+    }
+}

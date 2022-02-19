@@ -8,23 +8,24 @@
 
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="icon" type="image/icon" href="./assets/images/logos/favicon.ico">
+    <script src="https://kit.fontawesome.com/b18a78942f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- banner logo -->
     <header id="banner"> 
         <!-- navigation section -->
         <nav>
-            <a href="#" class="flex-logo"><img src="./assets/images/logos/yas logo1.png" class="logo"></a>
+            <a href="#" class="yas-logo"><img src="./assets/images/logos/yas logo1.png" class="logo"></a>
             <ul class="navBar">
                 <!-- list item elements -->
                 <li>
                     <a href="#about-me">About Me</a>
                 </li>
                 <li>
-                    <a href="#portfolio">Portfolio</a>
+                    <a href="#projects">Projects</a>
                 </li>
                 <li>
-                    <a href="./Yasmine Saad Resume pdf.pdf" target="_blank">Resume</a>
+                    <a href="#resume">Resume</a>
                 </li>
                 <li>
                     <a href="#contact">Contact</a>
@@ -43,7 +44,7 @@
     <section id="about-me" class="intro">
         <h2 class="title">About Me</h2>
 
-        <article class="flex-row">
+        <article class="about-me-wrapper">
             <div class="yas-img">
                 <img src="./assets/images/yas.jpeg" alt="yas siting on a bench in the metroparks surrounded by trees" class="yas-selfie">
             </div>
@@ -63,16 +64,16 @@
     </section>
 
     <!-- portfolio section -->
-    <section id="portfolio" class="portfolio-body">
-        <h2 class="portfolio-title">Portfolio</h2> 
+    <section id="projects" class="project-body">
+        <h2 class="title">Projects</h2> 
 
         <article class="grid">
-            <div class="portfolio-items-wrapper">
+            <div class="prim-project-item">
                 <!-- portfolio item 1 (run buddy)-->
-                <div class="portfolio-item">
-                    <img class="grid-img" src="./assets/images/run-buddy.jpeg" alt="a person running" />
-
-                    <div class="portfolio-text">
+                <div class="project-item">
+                    <img class="prim-grid-img" src="./assets/images/run-buddy.jpeg" alt="a person running" />
+                
+                    <div class="project-text">
                         <div class="logo-wrapper">
                             <a href="https://ysaad01.github.io/run-buddy/" target="_blank">
                                 <img src="./assets/images/logos/run-buddy logo.png" alt="yellow running figure">
@@ -86,12 +87,14 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <div class="project-items-wrapper">
                 <!-- portfolio item 2 (horiseon)-->
-                <div class="portfolio-item">
+                <div class="project-item">
                     <img class="grid-img" src="./assets/images/horiseon.jpg" alt="a person writing on a notebook with a laptop beside them" />
 
-                    <div class="portfolio-text">
+                    <div class="project-text">
                         <div class="logo-wrapper">
                             <a href="https://ysaad01.github.io/horiseon-website/" target="_blank">
                                 <img src="./assets/images/logos/horiseon logo.png" alt="brand awareness" class="portfolio-logo">
@@ -107,12 +110,14 @@
                 </div>
 
                 <!-- portfolio item 3 -->
-                <div class="portfolio-item">
+                <div class="project-item">
                     <img class="grid-img" src="./assets/images/macbook.jpeg" alt="a macbook with someone pointing at the screen" />
 
-                    <div class="portfolio-text">
+                    <div class="project-text">
                         <div class="logo-wrapper">
-                            <img src="./assets/images/logos/coming-soon logo1.png" alt="coming soon logo">
+                            <a href="https://www.youtube.com/watch?v=1TewCPi92ro" target="_blank">
+                                <img src="./assets/images/logos/coming-soon logo1.png" alt="coming soon logo">
+                            </a>
                         </div>
 
                         <div class="subtitle">
@@ -124,46 +129,14 @@
                 </div>
 
                 <!-- portfolio item 4 -->
-                <div class="portfolio-item">
-                    <img class="grid-img" src="./assets/images/code-macbook.jpeg" alt="a macbook on a desk with code on the screen" />
-
-                    <div class="portfolio-text">
-                        <div class="logo-wrapper">
-                            <img src="./assets/images/logos/coming-soon logo1.png" alt="coming soon logo">
-                        </div>
-
-                        <div class="subtitle">
-                            Under Construction 
-                            <br>
-                            Coming Soon
-                        </div>
-                    </div>
-                </div>
-
-                <!-- portfolio item 5 -->
-                <div class="portfolio-item">
-                    <img class="grid-img" src="./assets/images/typing.jpeg" alt="someone typing on a macbook" />
-
-                    <div class="portfolio-text">
-                        <div class="logo-wrapper">
-                            <img src="./assets/images/logos/coming-soon logo1.png" alt="coming soon logo">
-                        </div>
-
-                        <div class="subtitle">
-                            Under Construction 
-                            <br>
-                            Coming Soon
-                        </div>
-                    </div>
-                </div>
-
-                <!-- portfolio item 6 -->
-                <div class="portfolio-item">
+                <div class="project-item">
                     <img class="grid-img" src="./assets/images/code.jpeg" alt="a laptop screen with color coding on it" />
 
-                    <div class="portfolio-text">
+                    <div class="project-text">
                         <div class="logo-wrapper">
-                            <img src="./assets/images/logos/coming-soon logo1.png" alt="coming soon logo">
+                            <a href="https://www.youtube.com/watch?v=1TewCPi92ro" target="_blank">
+                                <img src="./assets/images/logos/coming-soon logo1.png" alt="coming soon logo">
+                            </a>
                         </div>
 
                         <div class="subtitle">
@@ -177,9 +150,85 @@
         </article>
     </section>
 
-    <!-- contact me section  -->
-    <section>
+    <!-- Resume Section  -->
+    <section id="resume" class="resume-contact">
+        <div>
+            <h2 class="title"> Resume </h2>
+            <a class="button" href="./Yasmine Saad Resume.pdf" target="_blank">Full Resume</a>
+        </div>
 
+        <div class="resume">
+            <article class="resume-info-wrapper">
+                <div class="resume-info">
+                    <h3> Education </h3>
+                    <ul>
+                        <li>
+                            Michigan State University, Full Stack Bootcamp
+                        </li>
+                        <li>
+                            Baldwin Wallace University, International Studies 
+                        </li>
+                    </ul>
+                    <br>
+                    <h3>Work History</h3>
+                    <h4>Rocket Mortgage</h4>
+                    <ul>
+                        <li>SOS Loan Specialist</li>
+                        <li>Power Banker</li>
+                    </ul>
+                    <br>
+                    <h4>Angel Dental Care</h4>
+                    <ul>
+                        <li>Office Receptionist</li>
+                    </ul>
+                </div>
+
+                <div class="resume-info">
+                    <h3>Technology Skills</h3>
+                    <br>
+                    <h4>Experience With:</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Github</li>
+                        <li>ETC</li>
+                        <li>ETC</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+
+    </section>
+
+    <!-- contact me section  -->
+    <section id="contact" class="resume-contact">
+        <div>
+            <h2 class="title">Contact Me</h2>
+        </div>
+
+        <section class="contact-icons">
+            <div class="contact-icons-wrapper">
+                <!-- email section -->
+                <a href="mailto:ysaad2325@gmail.com" target="_blank">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+                <!-- github section -->
+                <a href="https://github.com/ysaad01" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <!-- phone section -->
+                <a href="tel:(440) 681-0984">
+                    <i class="fa-solid fa-square-phone"></i>
+                </a>
+            </div>
+        </section>
     </section> 
+
+    <!-- footer section  -->
+    <footer>
+        <h2> &#10085 Developed with love by Yas.</h2>
+    </footer>
 </body>
 </html>
